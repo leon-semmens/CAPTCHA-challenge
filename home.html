@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="api.js"></script>
+        <script type="text/javascript" src="home.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <p id="notification"></p>
+            <h2>Welcome!</h2>
+            <h3 id="username"></h3><br>
+            <input type="button" value="Change password" id="changepassword">
+            <input type="button" value="Logout" id="logout">
+
+            <div id="changepasswordbox" style="display:none;">
+                <h3>Change password</h3>
+                <input type="password" value="" id="changepasswordcurrent" placeholder="Current password" class="text">
+                <input type="password" value="" id="changepasswordnew1" placeholder="New password" class="text">
+                <input type="password" value="" id="changepasswordnew2" placeholder="New password again" class="text">
+                <p id="changepassworderror" class="error"></p>
+                <input type="button" value="Confirm" id="changepasswordconfirm">
+                <input type="button" value="Cancel" id="changepasswordcancel">
+            </div>
+        </div>
+    </body>
+</html>

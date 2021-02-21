@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="api.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+    </head>
+    <body>
+        <div class="box">
+            <div id="loginbox">
+                <h2>Login or Sign up</h2><br><br>
+                <input type="text" value="" id="username" placeholder="Username" class="text">
+                <input type="password" value="" id="loginpassword" placeholder="Password" class="text">
+                <p id="loginerror" class="error"></p>
+                <input type="button" value="Login" id="login">
+                <input type="button" value="Signup" id="loginsignup">
+            </div>
+            <div id="signupbox">
+                <h2>Sign up</h2>
+                <p>Create a new account</p> 
+                <input type="text" value="" id="firstname" placeholder="First name" class="text">
+                <input type="text" value="" id="lastname" placeholder="Last name" class="text">
+                <input type="password" value="" id="signuppassword" placeholder="Password" class="text">
+                <p id="signuperror" class="error"></p>
+                <input type="button" value="Back" id="signupback">
+                <input type="button" value="Signup" id="signup">
+            </div>
+            <div id="captcha" style="display:none;">
+                <h3 id="captchaquestion"></h3>
+                <input type="text" value="" id="captchaanswer" placeholder="Enter answer here" class="text">
+                <p id="captchaerror" class="error"></p>
+                <input type="button" value="Confirm" id="captchaconfirm">
+            </div>
+        </div>
+    </body>
+</html>
